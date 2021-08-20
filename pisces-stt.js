@@ -3,7 +3,7 @@
 function main(
 	languageCode = 'en-US',
 	streamingLimit = 290000,
-	PORT = 50012
+	PORT = 50044
 ) {
 	const chalk = require('chalk');
 	const {Writable} = require('stream');
@@ -13,7 +13,7 @@ function main(
 	const client = new speech.SpeechClient();
 	const config = {
 		encoding: "LINEAR16",
-		sampleRateHertz: 16000,
+		sampleRateHertz: 8000,
 		languageCode: languageCode,
 		alternativeLanguageCodes: ['ko-KR', 'en-US', 'ja-JP'],
 		audioChannelCount: 2,
