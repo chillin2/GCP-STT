@@ -13,7 +13,9 @@ function main(
 	const client = new speech.SpeechClient();
 	const config = {
 		encoding: "LINEAR16",
+		//encoding: "MULAW",
 		sampleRateHertz: 8000,
+		//sampleRateHertz: 8000,
 		languageCode: languageCode,
 		alternativeLanguageCodes: ['ko-KR', 'en-US', 'ja-JP'],
 		audioChannelCount: 2,
